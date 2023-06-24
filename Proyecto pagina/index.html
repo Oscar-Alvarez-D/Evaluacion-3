@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"> 
+<title>AndyBikes</title> 
+<!-- Esto es para usar Materialize CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<link rel="stylesheet" href="reset.css"> 
+ <!-- JavaScript de Materialize -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+var elems = document.querySelectorAll('select');
+var instances = M.FormSelect.init(elems);
+});
+</script>
+</head>
+<body>
+<header>
+<nav>
+<div class="nav-wrapper #212121 grey darken-4">
+<a href="#8c9eff" class="brand-logo" >AndyBikes</a>
+<label for="" class="brand">
+</label>
+<ul id="nav-mobile" class="right hide-on-med-and-down">
+<li><a href="#Nosotros">Nosotros</a></li>
+<li><a href="#Nuestros Productos">Nuestros Productos</a></li>
+<li><a href="#Multimedia">Multimedia</a></li>
+<li><a href="#Formulario">Formulario</a></li>
+</ul>
+</div>
+</nav>
+</header>
+<main> 
+<section id="Nosotros" class="center-align">
+<img class="banner" src="Image/portada.jpg">
+<h1>Nosotros</h1>    
+<pre>Somos una pagina de ventas de bicicletas. Tal como tu, somos unos aficionados a este deporte, asi que aqui
+podras encontrar la mayor seleccion de bicicletas de alta competicion ( Porque amamos las carreras al igual que tu)
+Te ofrecemos las mejores marcas del mercado, tales como <b>SCOTT, LAPIERRE,SPECIALIZED,CANYON</b> y muchas mas.
+</pre>
+<hr class="line">
+</section>
+<section id="Nuestros Productos" class="center-align">
+<h1>Nuestros productos</h1>
+<div class="container">
+<div class="section">
+<div class="row">
+<div class="col s12 m4">
+<img class="responsive-img" src="Image/spark2020.jpg">
+<p>SCOTT RC 900</p>
+<div class="center">
+<a class="waves-effect waves-light btn #b71c1c red darken-4">1.500.000</a>
+</div>
+</div>
+      
+<div class="col s12 m4">
+<img class="responsive-img" src="Image/Spark.jpg">
+<p>SCOTT SCALE 950</p>
+<div class="center">
+<a class="waves-effect waves-light btn #b71c1c red darken-4">$3.000.0000</a>
+</div>
+</div>
+      
+<div class="col s12 m4">
+<img class="responsive-img" src="Image/SPARK2023.png">
+<p>SCOTT SPARK 2023</p>
+<div class="center">
+<a class="waves-effect waves-light btn #b71c1c red darken-4">4.000.000</a>
+</div>
+</div>
+<div class="col s12 m4">
+<img class="responsive-img" src="Image/SCOTTSRAMSON.png">
+<p>SCOTT RANSOM</p>
+<div class="center">
+<a class="waves-effect waves-light btn #b71c1c red darken-4">4.000.000</a>
+</div>
+</div>
+      
+        
+<div class="col s12 m4">
+<img class="responsive-img" src="Image/ASPECT.png">
+<p>SCOTT ASPECT</p>
+<div class="center">
+<a class="waves-effect waves-light btn #b71c1c red darken-4">4.000.000</a>
+</div>
+</div>
+      
+
+<div class="col s12 m4">
+<img class="responsive-img" src="Image/CONTESSA.jpg">
+<p>SCOTT CONTESSA</p>
+<div class="center">
+<a class="waves-effect waves-light btn #b71c1c red darken-4">4.000.000</a>
+</div>
+</div>
+</div>
+</div>
+<hr>
+<section id="Multimedia" class="center-align">
+<h1>Multimedia</h1>
+<p>SCOTT</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-iK2lENnrso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section><br>
+<hr>
+<section id="Formulario" class="center-align container">
+<h3>Formulario de compra</h3>
+<form id="form">
+<div class="input-field">
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre">      <!--input tipo text-->
+</div>
+<div class="input-field">
+<label for="apellido">Apellido:</label>
+<input type="text" id="apellido">    <!--input tipe text-->
+</div>
+<div class="input-field">
+<label for="telefono">Número telefónico:</label>
+<input type="tel" id="telefono">     <!--input type tel-->
+</div>
+<div class="input-field">
+<label for="email">Email:</label>    <!--input type email-->
+<input type="email" id="email">
+</div>
+<div class="input-field">
+<label for="direccion">Direccion:</label>
+<input type="text" id="direccion">   <!--input type text-->
+</div>
+<div class="input-field col s12">
+<select id="Seleccionar">       <!--select-->
+<option value="">Seleccione un modelo</option>
+<option value="Scott Contesa">Scott RC 900</option>
+<option value="Scott Spark">Scott Scale 950</option>
+<option value="Scott Scale">Scott Spark 2023</option>
+<option value="Scott SuperSonic">Scott Ransom</option>
+<option value="Scott Marlin">Scott Aspect</option>
+<option value="Scott Ghost">Scott Contessa</option>
+</select>
+</div>
+<div class="input-field col s12">
+<select name="Ciudad" id="SeleccionarCiudad">
+<option value="">Seleccione una ciudad</option>
+<option value="Copiapo">Copiapo</option>
+<option value="La serena">La serena</option>
+<option value="Caldera">Caldera</option>
+
+</select>
+</div>
+<div class="input-field col s12">
+<select name="Envio" id="SeleccionarEnvio">
+<option value="">Seleccione un método de envío</option>
+<option value="Domicilio">Envio a domicilio</option>
+<option value="Retiro en tienda">Retiro en tienda</option>
+      
+</select>
+</div>
+<div class="input-field">
+<label for="comentarios">Informacion adicional:</label>
+<br>
+<textarea class="Elementos" id="comentarios" placeholder="Información adicional"></textarea> <!--textarea-->
+</div>
+<p>
+<label>
+<input id="terminos" name="terminos" type="checkbox" /> <!--checkbox-->
+<span>Acepto los terminos y condiciones</span>
+</label>
+</p>
+<button class="btn waves-effect waves-light #b71c1c red darken-4" type="submit" name="action">Enviar</button> <!--submit-->
+</form>
+</section>
+<!-- Fin seccion formulario-->
+<section>
+<table id="tabla">
+<thead>
+<tr>
+<th>Nombre</th>
+<th>Apellido</th>
+<th>email</th>
+<th>telefono</th>
+<th>direccion</th>
+<th>modelo</th>
+<th>ciudad</th>
+<th>envio</th><br>
+<th>Terminos y servicios</th>
+</tr>
+</thead>
+<tbody id="tabla-body"></tbody>
+</table>
+<br><br>
+<button class="btn waves-effect waves-light #b71c1c red darken-4" id="aumentar-fuente">Aumentar Fuente</button> <!-- Botton para aumentar la fuente-->
+<button class="btn waves-effect waves-light #b71c1c red darken-4" id="cambiar-contraste">Cambiar Contraste</button> <!--Cambiar contraste-->
+</section>
+</main>
+<br>
+
+<footer class="footer #424242 grey darken-4">
+<div class="container">
+<div class="footer-now">
+<div class="footer-links">
+
+<h4>Compañia</h4>
+<ul>
+<li><a href="#">nosotros</a></li>
+<li><a href="#">servicios</a></li>
+<li><a href="#">privacidad</a></li>
+</ul>
+</div>
+<div class="footer-links">
+
+<h4>Ayuda</h4>
+<ul>
+<li><a href="#">Preguntas</a></li>
+<li><a href="#">Compras</a></li>
+<li><a href="#">envios</a></li>
+</ul>
+</div>
+<div class="footer-links">
+
+<h4>Tienda</h4>
+<ul>
+<li><a href="#">Bicicletas XC</a></li>
+<li><a href="#">Bicicletas Enduro</a></li>
+</ul>
+</div>
+
+<div class="footer-links">
+<h4>siguenos</h4>
+<div class="social-link">
+<a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<script src="/Proyecto pagina/js/validaciones.js"></script>
+</body>
+</html>
